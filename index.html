@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script src="/static/script.js"></script>
+    <title>Cars-Viewer</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <form action="/search" method="GET" id="filter">
+                <a href="/" style="text-decoration: inherit; color:inherit">
+                    <h1>Cars Gallery</h1>
+                </a>
+                <p><i>"We gots all them cars"</i></p>
+                <h2>Filters</h2>
+                <input type="text" name="search" <!--Separator--> form="filter" placeholder="Search..." />
+                <h3>Sort by:</h3>
+                <label for="cat">Category:</label>
+                <select id="cat" name="cat" form="filter">
+                    <option value="0">All</option>
+                    <!--Separator-->
+                </select>
+                <label for="manu">Manufacturer:</label>
+                <select id="manu" name="manu" form="filter">
+                    <option value="0">All</option>
+                    <!--Separator-->
+                </select>
+                <label for="year">Year:</label>
+                <select id="year" name="year" form="filter">
+                    <option value="0">All</option>
+                    <!--Separator-->
+                </select>
+                <label for="engine">Engine:</label>
+                <select id="engine" name="engine" form="filter">
+                    <option value="0">All</option>
+                    <!--Separator-->
+                </select>
+                    <!--Separator-->
+                <label for="transmission">Transmission:</label>
+                <select id="transmission" name="transmission" form="filter">
+                    <option value="0">All</option>
+                    <!--Separator-->
+                </select>
+                <label for="drivetrain">Drivetrain:</label>
+                <select id="drivetrain" name="drivetrain" form="filter">
+                    <option value="0">All</option>
+                    <!--Separator-->
+                </select>
+                <input type="submit" value="Apply Filters" form="filter" />
+                <input type="submit" value="Compare Selected" form="compare">
+                <!--Separator-->
+            </form>
+            <form action="/car" method="GET" id="compare"></form>
+        </aside>
+        <!--Separator-->
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

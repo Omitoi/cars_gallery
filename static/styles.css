@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    height: fit-content;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.content-compare {
+    width: 80%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: repeat(11, auto);
+    grid-auto-flow: column;
+}
+
+.content-single {
+    width: 80%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+}
+
+.columns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: repeat(10, auto);
+    grid-auto-flow: row;
+}
+
+.content-compare .image-box {
+    height: 12.5rem;
+    position: relative;
+}
+
+.content-single .image-box {
+    height: 40rem;
+    position: relative;
+}
+
+.content-compare h3,
+.content-compare p {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: auto;
+}
+
+select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    margin: 10px 0;
+
+}
+
+/* Rectangular thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 1rem;
+    border-radius: 0px;
+    background-color: #04AA6D;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    width: 1.5rem;
+    height: 1rem;
+    border-radius: 0px;
+    background-color: #04AA6D;
+    cursor: pointer;
+}
+
+label {
+    margin-top: 10px;
+    color: #333;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px 0px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="checkbox"] {
+    transform: scale(2.5);
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+#no-shadow {
+    box-shadow: none;
+}
+
+.image-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: loopBackground 0s linear infinite;
+    z-index: 10;
+}
+
+.content .image-box:hover {
+    transform: scale(1.05);
+}
+
+.content-compare .image-box:hover {
+    transform: scale(1.05);
+}
+
+.image-box label {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    background-color: white;
+    opacity: 80%;
+    padding: 5px;
+}
+
+.image-box img {
+    width:100%;
+    height: auto;
+    position:relative;
+    top: 0px;
+}
+
+.car-box {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.car-info {
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+.button {
+    text-align: center;
+    padding-block: 1px;
+    border-color: buttonborder;
+    border-style: outset;
+    border-width: 1px;
+    padding-inline: 6px;
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px 0px;
+    text-decoration: none;
+}
+.button, input[type="submit"] {
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: default;
+    background-color: lightgray;
+    color: gray;
+}
+
+.pagebuttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.compare {
+    position: fixed
+}
+
+#filter {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tmarg40 {
+    margin-top: 40px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.button-group .button,
+.button-group input[type="submit"] {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.button-group form {
+    width: 100%;
+}
+
+.error {
+    margin:auto;
+}
+.error img {
+    width: 100%;
+    height: auto;
+}
+.error h1 {
+    text-align: center;
+}
+
+.car-card {
+    position: relative;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 20;
+}
+
+.favorite-btn:hover {
+    background: white;
+    transform: scale(1.1);
+    z-index: 30;
+}
+
+.star-icon {
+    transition: all 0.2s ease;
+}
+
+.favorite-btn.active .star-icon {
+    fill: #ffd700;
+    stroke: #ffd700;
+}
+
+.related-cars {
+    margin: 20px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.related-cars h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.mini-car-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.mini-car-card {
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mini-car-card input[type="checkbox"] {
+    transform: scale(1.5);
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    z-index: 2;
+}
+
+.mini-image-box {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.mini-car-card:hover .mini-image-box {
+    transform: scale(1.05);
+}
+
+.mini-image-box label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mini-car-card .favorite-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.2s ease;
+}
+
+.mini-car-card .favorite-btn:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+.mini-car-card .star-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.mini-car-card .favorite-btn.active .star-icon {
+    fill: #ffd700;
+    stroke: #ffd700;
+}
+
+.content-single .favorite-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 20;
+}
+
+.content-compare .favorite-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 20;
+}
+
+.content-compare .favorite-btn .star-icon {
+    width: 20px;
+    height: 20px;
+}
