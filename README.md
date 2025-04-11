@@ -46,11 +46,6 @@ Then navigate into the project directory:
 cd cars
 ```
 
-### Running the API
-
-1. Navigate to the `./api/` folder.
-2. Follow the instructions in the `README` inside `./api/` to start the API.
-
 ### Running the Project
 
 1. Open a terminal and navigate to the project root.
@@ -58,7 +53,7 @@ cd cars
    ```sh
    go run .
    ```
-3. Open a web browser and navigate to the provided local server address.
+3. Open a web browser and navigate to localhost/8080.
 
 ## API Endpoints
 

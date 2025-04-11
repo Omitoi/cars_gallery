@@ -1,0 +1,808 @@
+{
+  "manufacturers": [
+    {
+      "id": 1,
+      "name": "Toyota",
+      "country": "Japan",
+      "foundingYear": 1937
+    },
+    {
+      "id": 2,
+      "name": "Honda",
+      "country": "Japan",
+      "foundingYear": 1948
+    },
+    {
+      "id": 3,
+      "name": "BMW",
+      "country": "Germany",
+      "foundingYear": 1916
+    },
+    {
+      "id": 4,
+      "name": "Audi",
+      "country": "Germany",
+      "foundingYear": 1910
+    },
+    {
+      "id": 5,
+      "name": "Mercedes-Benz",
+      "country": "Germany",
+      "foundingYear": 1926
+    },
+    {
+      "id": 6,
+      "name": "Ford",
+      "country": "United States",
+      "foundingYear": 1903
+    },
+    {
+      "id": 7,
+      "name": "Chevrolet",
+      "country": "United States",
+      "foundingYear": 1911
+    },
+    {
+      "id": 8,
+      "name": "Hyundai",
+      "country": "South Korea",
+      "foundingYear": 1967
+    },
+    {
+      "id": 9,
+      "name": "Lexus",
+      "country": "Japan",
+      "foundingYear": 1989
+    },
+    {
+      "id": 10,
+      "name": "Nissan",
+      "country": "Japan",
+      "foundingYear": 1933
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "SUV"
+    },
+    {
+      "id": 2,
+      "name": "Sedan"
+    },
+    {
+      "id": 3,
+      "name": "Coupe"
+    },
+    {
+      "id": 4,
+      "name": "Truck"
+    },
+    {
+      "id": 5,
+      "name": "Hatchback"
+    },
+    {
+      "id": 6,
+      "name": "Convertible"
+    },
+    {
+      "id": 7,
+      "name": "Wagon"
+    },
+    {
+      "id": 8,
+      "name": "Electric"
+    },
+    {
+      "id": 9,
+      "name": "Luxury"
+    },
+    {
+      "id": 10,
+      "name": "Sports"
+    }
+  ],
+
+  "carModels": [
+    {
+      "id": 1,
+      "name": "Toyota Corolla",
+      "manufacturerId": 1,
+      "categoryId": 2,
+      "year": 2023,
+      "specifications": {
+        "engine": "1.8L Inline-4",
+        "horsepower": 139,
+        "transmission": "CVT",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "toyota_corolla.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Honda Civic",
+      "manufacturerId": 2,
+      "categoryId": 2,
+      "year": 2024,
+      "specifications": {
+        "engine": "2.0L Inline-4",
+        "horsepower": 158,
+        "transmission": "6-speed Manual",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "honda_civic.jpg"
+    },
+    {
+      "id": 3,
+      "name": "BMW 3 Series",
+      "manufacturerId": 3,
+      "categoryId": 2,
+      "year": 2023,
+      "specifications": {
+        "engine": "2.0L Inline-4",
+        "horsepower": 255,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "bmw_3series.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Audi A4",
+      "manufacturerId": 4,
+      "categoryId": 2,
+      "year": 2024,
+      "specifications": {
+        "engine": "2.0L Inline-4",
+        "horsepower": 201,
+        "transmission": "7-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "audi_a4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Mercedes-Benz E-Class",
+      "manufacturerId": 5,
+      "categoryId": 2,
+      "year": 2023,
+      "specifications": {
+        "engine": "2.0L Inline-4",
+        "horsepower": 255,
+        "transmission": "9-speed Automatic",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "mercedes_eclass.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Ford F-150",
+      "manufacturerId": 6,
+      "categoryId": 4,
+      "year": 2024,
+      "specifications": {
+        "engine": "3.5L V6",
+        "horsepower": 400,
+        "transmission": "10-speed Automatic",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "ford_f150.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Chevrolet Silverado",
+      "manufacturerId": 7,
+      "categoryId": 4,
+      "year": 2023,
+      "specifications": {
+        "engine": "5.3L V8",
+        "horsepower": 355,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "chevrolet_silverado.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Hyundai Sonata",
+      "manufacturerId": 8,
+      "categoryId": 2,
+      "year": 2024,
+      "specifications": {
+        "engine": "2.5L Inline-4",
+        "horsepower": 191,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "hyundai_sonata.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Lexus RX",
+      "manufacturerId": 9,
+      "categoryId": 1,
+      "year": 2023,
+      "specifications": {
+        "engine": "3.5L V6",
+        "horsepower": 295,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "lexus_rx.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Nissan Altima",
+      "manufacturerId": 10,
+      "categoryId": 2,
+      "year": 2024,
+      "specifications": {
+        "engine": "2.5L Inline-4",
+        "horsepower": 188,
+        "transmission": "CVT",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "nissan_altima.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Toyota RAV4",
+      "manufacturerId": 1,
+      "categoryId": 1,
+      "year": 2023,
+      "specifications": {
+        "engine": "2.5L Inline-4",
+        "horsepower": 203,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "toyota_rav4.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Honda CR-V",
+      "manufacturerId": 2,
+      "categoryId": 1,
+      "year": 2024,
+      "specifications": {
+        "engine": "1.5L Turbo Inline-4",
+        "horsepower": 190,
+        "transmission": "CVT",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "honda_crv.jpg"
+    },
+    {
+      "id": 13,
+      "name": "BMW 5 Series",
+      "manufacturerId": 3,
+      "categoryId": 9,
+      "year": 2023,
+      "specifications": {
+        "engine": "3.0L Inline-6",
+        "horsepower": 335,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "bmw_5series.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Audi Q5",
+      "manufacturerId": 4,
+      "categoryId": 1,
+      "year": 2024,
+      "specifications": {
+        "engine": "2.0L Turbo Inline-4",
+        "horsepower": 261,
+        "transmission": "7-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "audi_q5.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Mercedes-Benz GLE",
+      "manufacturerId": 5,
+      "categoryId": 1,
+      "year": 2023,
+      "specifications": {
+        "engine": "3.0L Inline-6",
+        "horsepower": 362,
+        "transmission": "9-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "mercedes_gle.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Ford Mustang",
+      "manufacturerId": 6,
+      "categoryId": 10,
+      "year": 2024,
+      "specifications": {
+        "engine": "5.0L V8",
+        "horsepower": 450,
+        "transmission": "6-speed Manual",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "ford_mustang.jpeg"
+    },
+    {
+      "id": 17,
+      "name": "Chevrolet Camaro",
+      "manufacturerId": 7,
+      "categoryId": 10,
+      "year": 2023,
+      "specifications": {
+        "engine": "6.2L V8",
+        "horsepower": 650,
+        "transmission": "10-speed Automatic",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "chevrolet_camaro.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Hyundai Tucson",
+      "manufacturerId": 8,
+      "categoryId": 1,
+      "year": 2024,
+      "specifications": {
+        "engine": "2.5L Inline-4",
+        "horsepower": 187,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "hyundai_tucson.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Lexus IS",
+      "manufacturerId": 9,
+      "categoryId": 2,
+      "year": 2023,
+      "specifications": {
+        "engine": "2.0L Turbo Inline-4",
+        "horsepower": 241,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "lexus_is.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Nissan Rogue",
+      "manufacturerId": 10,
+      "categoryId": 1,
+      "year": 2024,
+      "specifications": {
+        "engine": "2.5L Inline-4",
+        "horsepower": 181,
+        "transmission": "CVT",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "nissan_rogue.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Toyota Tacoma",
+      "manufacturerId": 1,
+      "categoryId": 4,
+      "year": 2023,
+      "specifications": {
+        "engine": "3.5L V6",
+        "horsepower": 278,
+        "transmission": "6-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "toyota_tacoma.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Honda Accord",
+      "manufacturerId": 2,
+      "categoryId": 2,
+      "year": 2024,
+      "specifications": {
+        "engine": "1.5L Turbo Inline-4",
+        "horsepower": 192,
+        "transmission": "CVT",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "honda_accord.jpeg"
+    },
+    {
+      "id": 23,
+      "name": "BMW X5",
+      "manufacturerId": 3,
+      "categoryId": 1,
+      "year": 2023,
+      "specifications": {
+        "engine": "3.0L Inline-6",
+        "horsepower": 335,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "bmw_x5.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Audi Q7",
+      "manufacturerId": 4,
+      "categoryId": 1,
+      "year": 2024,
+      "specifications": {
+        "engine": "3.0L Turbo V6",
+        "horsepower": 335,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "audi_q7.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Mercedes-Benz S-Class",
+      "manufacturerId": 5,
+      "categoryId": 9,
+      "year": 2023,
+      "specifications": {
+        "engine": "3.0L Inline-6",
+        "horsepower": 429,
+        "transmission": "9-speed Automatic",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "mercedes_sclass.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Ford Explorer",
+      "manufacturerId": 6,
+      "categoryId": 1,
+      "year": 2024,
+      "specifications": {
+        "engine": "2.3L Turbo Inline-4",
+        "horsepower": 300,
+        "transmission": "10-speed Automatic",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "ford_explorer.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Chevrolet Corvette",
+      "manufacturerId": 7,
+      "categoryId": 10,
+      "year": 2023,
+      "specifications": {
+        "engine": "6.2L V8",
+        "horsepower": 490,
+        "transmission": "8-speed Dual Clutch",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "chevrolet_corvette.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Hyundai Kona",
+      "manufacturerId": 8,
+      "categoryId": 5,
+      "year": 2024,
+      "specifications": {
+        "engine": "1.6L Turbo Inline-4",
+        "horsepower": 195,
+        "transmission": "7-speed Dual Clutch",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "hyundai_kona.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Lexus LC",
+      "manufacturerId": 9,
+      "categoryId": 3,
+      "year": 2023,
+      "specifications": {
+        "engine": "5.0L V8",
+        "horsepower": 471,
+        "transmission": "10-speed Automatic",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "lexus_lc.jpg"
+    },
+    { 
+      "id": 30,
+      "name": "Nissan Titan",
+      "manufacturerId": 10,
+      "categoryId": 4,
+      "year": 2024,
+      "specifications": {
+        "engine": "5.6L V8",
+        "horsepower": 400,
+        "transmission": "9-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "nissan_titan.jpg"
+    }, {
+      "id": 31,
+      "name": "Toyota 86",
+      "manufacturerId": 1,
+      "categoryId": 3,
+      "year": 2023,
+      "specifications": {
+        "engine": "2.4L Boxer-4",
+        "horsepower": 228,
+        "transmission": "6-speed Manual",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "toyota_86.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Volvo V60",
+      "manufacturerId": 11,
+      "categoryId": 7,
+      "year": 2024,
+      "specifications": {
+        "engine": "2.0L Turbo Inline-4",
+        "horsepower": 250,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "volvo_v60.jpg"
+    },
+    {
+      "id": 33,
+      "name": "BMW Z4",
+      "manufacturerId": 3,
+      "categoryId": 6,
+      "year": 2023,
+      "specifications": {
+        "engine": "3.0L Inline-6",
+        "horsepower": 382,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "bmw_z4.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Audi TT",
+      "manufacturerId": 4,
+      "categoryId": 3,
+      "year": 2024,
+      "specifications": {
+        "engine": "2.0L Turbo Inline-4",
+        "horsepower": 228,
+        "transmission": "7-speed Dual Clutch",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "audi_tt.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Mercedes-Benz C-Class Cabriolet",
+      "manufacturerId": 5,
+      "categoryId": 6,
+      "year": 2023,
+      "specifications": {
+        "engine": "2.0L Inline-4",
+        "horsepower": 255,
+        "transmission": "9-speed Automatic",
+        "drivetrain": "Rear-Wheel Drive"
+      },
+      "image": "mercedes_cclass_cabriolet.jpg"
+    },
+    {
+      "id": 36,
+      "name": "Ford Focus",
+      "manufacturerId": 6,
+      "categoryId": 5,
+      "year": 2024,
+      "specifications": {
+        "engine": "2.3L Inline-4",
+        "horsepower": 280,
+        "transmission": "6-speed Manual",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "ford_focus.jpg"
+    },
+    {
+      "id": 37,
+      "name": "Chevrolet Bolt EV",
+      "manufacturerId": 7,
+      "categoryId": 8,
+      "year": 2023,
+      "specifications": {
+        "engine": "Electric Motor",
+        "horsepower": 200,
+        "transmission": "Single-Speed",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "chevrolet_bolt_ev.jpg"
+    },
+    {
+      "id": 38,
+      "name": "Hyundai Ioniq 5",
+      "manufacturerId": 8,
+      "categoryId": 8,
+      "year": 2024,
+      "specifications": {
+        "engine": "Electric Motor",
+        "horsepower": 225,
+        "transmission": "Single-Speed",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "hyundai_ioniq_5.jpg"
+    },
+    {
+      "id": 39,
+      "name": "Lexus ES",
+      "manufacturerId": 9,
+      "categoryId": 7,
+      "year": 2023,
+      "specifications": {
+        "engine": "3.5L V6",
+        "horsepower": 302,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "lexus_es.jpg"
+    },
+    {
+      "id": 40,
+      "name": "Nissan Leaf",
+      "manufacturerId": 10,
+      "categoryId": 8,
+      "year": 2024,
+      "specifications": {
+        "engine": "Electric Motor",
+        "horsepower": 214,
+        "transmission": "Single-Speed",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "nissan_leaf.jpg"
+    }, {
+      "id": 41,
+      "name": "Toyota Camry",
+      "manufacturerId": 1,
+      "categoryId": 2,
+      "year": 2019,
+      "specifications": {
+        "engine": "2.5L Inline-4",
+        "horsepower": 203,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "toyota_camry.jpg"
+    },
+    {
+      "id": 42,
+      "name": "Honda Pilot",
+      "manufacturerId": 2,
+      "categoryId": 1,
+      "year": 2020,
+      "specifications": {
+        "engine": "3.5L V6",
+        "horsepower": 280,
+        "transmission": "9-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "honda_pilot.jpg"
+    },
+    {
+      "id": 43,
+      "name": "BMW X3",
+      "manufacturerId": 3,
+      "categoryId": 1,
+      "year": 2021,
+      "specifications": {
+        "engine": "2.0L Inline-4",
+        "horsepower": 248,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "bmw_x3.jpg"
+    },
+    {
+      "id": 44,
+      "name": "Audi A6",
+      "manufacturerId": 4,
+      "categoryId": 2,
+      "year": 2022,
+      "specifications": {
+        "engine": "3.0L Turbo V6",
+        "horsepower": 335,
+        "transmission": "7-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "audi_a6.jpg"
+    },
+    {
+      "id": 45,
+      "name": "Mercedes-Benz GLS",
+      "manufacturerId": 5,
+      "categoryId": 1,
+      "year": 2021,
+      "specifications": {
+        "engine": "3.0L Turbo Inline-6",
+        "horsepower": 362,
+        "transmission": "9-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "mercedes_gls.jpg"
+    },
+    {
+      "id": 46,
+      "name": "Ford Escape",
+      "manufacturerId": 6,
+      "categoryId": 1,
+      "year": 2020,
+      "specifications": {
+        "engine": "1.5L Turbo Inline-3",
+        "horsepower": 181,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "ford_escape.jpg"
+    },
+    {
+      "id": 47,
+      "name": "Chevrolet Traverse",
+      "manufacturerId": 7,
+      "categoryId": 1,
+      "year": 2019,
+      "specifications": {
+        "engine": "3.6L V6",
+        "horsepower": 310,
+        "transmission": "9-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "chevrolet_traverse.jpg"
+    },
+    {
+      "id": 48,
+      "name": "Hyundai Santa Fe",
+      "manufacturerId": 8,
+      "categoryId": 1,
+      "year": 2018,
+      "specifications": {
+        "engine": "2.4L Inline-4",
+        "horsepower": 185,
+        "transmission": "8-speed Automatic",
+        "drivetrain": "Front-Wheel Drive"
+      },
+      "image": "hyundai_santa_fe.jpg"
+    },
+    {
+      "id": 49,
+      "name": "Lexus GX",
+      "manufacturerId": 9,
+      "categoryId": 1,
+      "year": 2022,
+      "specifications": {
+        "engine": "4.6L V8",
+        "horsepower": 301,
+        "transmission": "6-speed Automatic",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "lexus_gx.jpg"
+    },
+    {
+      "id": 50,
+      "name": "Nissan Murano",
+      "manufacturerId": 10,
+      "categoryId": 1,
+      "year": 2021,
+      "specifications": {
+        "engine": "3.5L V6",
+        "horsepower": 260,
+        "transmission": "CVT",
+        "drivetrain": "All-Wheel Drive"
+      },
+      "image": "nissan_murano.jpg"
+    } 
+  ]
+}
